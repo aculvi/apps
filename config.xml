@@ -10,8 +10,8 @@
         APP
     </description>
     <author email="apps@studioglobals.com" href="http://www.studioglobals.com">
-        Globals D&D
-    </author
+        Globals D&amp;D
+    </author>
         
     <feature name="http://api.phonegap.com/3.3.0/device" />
     
