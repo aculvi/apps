@@ -28,9 +28,7 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 
-    <access origin="*" subdomains="true" />
-
-	<icon src="img/icon.png" />
+	<icon src="img/logo.fw.png" />
 
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
