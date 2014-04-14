@@ -3,17 +3,19 @@
 <widget xmlns       = "http://www.w3.org/ns/widgets"
     xmlns:gap       = "http://phonegap.com/ns/1.0"
     xmlns:android   = "http://schemas.android.com/apk/res/android"
-    id              = "app.clinicas.guanganmen"
+    id              = "com.locarre.app"
     version         = "1.0.0">
 	
-    <name>Guang An Men</name>
+    <name>Lo carre</name>
     <description>
-        Las Clinicas Guang An Men han desarrollado una aplicación para dispositivos moviles y tabletas con el fin de realizar de forma más agil tareas como pedir hora, localizar un centro o los datos de contacto.
+        APP
     </description>
-    <author email="info@hitech-informatica.es" href="http://www.hitech-informatica.es">
+    <author email="apps@studioglobals.com" href="http://www.studioglobals.com">
         HiTech Informatica
-    </author>
+    </author
+        
     <feature name="http://api.phonegap.com/3.3.0/device" />
+    
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
@@ -30,7 +32,7 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 
-	<icon src="img/logo.fw.png" />
+	<icon src="img/icon.png" />
 	
     <icon gap:density="ldpi" gap:platform="android" src="res/icon/android/icon-36-ldpi.png" />
     <icon gap:density="mdpi" gap:platform="android" src="res/icon/android/icon-48-mdpi.png" />
