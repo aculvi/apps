@@ -70,8 +70,7 @@
 	<!-- gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" / -->
 	<gap:plugin name="org.apache.cordova.core.AccelListener" />
 	<gap:plugin name="org.apache.cordova.core.CompassListener" />
-	<gap:plugin name="org.apache.cordova.core.GeoBroker" />
-	<gap:plugin name="org.apache.cordova.core.CameraLauncher" />
+		<gap:plugin name="org.apache.cordova.core.CameraLauncher" />
 	<gap:plugin name="org.apache.cordova.core.AudioHandler" />
 	<gap:plugin name="org.apache.cordova.core.Capture" />
 
