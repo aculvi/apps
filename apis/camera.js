@@ -1,56 +1,84 @@
-/* Copyright (c) 2012 Mobile Developer Solutions. All rights reserved.
- * This software is available under the MIT License:
- * The MIT License
- * Permission is hereby granted, free of charge, to any person obtaining a copy of this software 
- * and associated documentation files (the "Software"), to deal in the Software without restriction, 
- * including without limitation the rights to use, copy, modify, merge, publish, distribute, 
- * sublicense, and/or sell copies of the Software, and to permit persons to whom the Software 
- * is furnished to do so, subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all copies 
- * or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
- * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
- * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
- * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
- * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- */
+ var pictureSource;   // picture source
+    var destinationType; // sets the format of returned value 
 
+    // Wait for Cordova to connect with the device
+    //
+    document.addEventListener("deviceready",onDeviceReady,false);
 
-var pictureSource;   // picture source
-var destinationType; // sets the format of returned value 
-// See the above in device.js for their assignments
+    // Cordova is ready to be used!
+    //
+    function onDeviceReady() {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
 
-// api-camera
-function onPhotoDataSuccess(imageData) {
-    console.log("* * * onPhotoDataSuccess");
-    var cameraImage = document.getElementById('cameraImage');
-    cameraImage.style.visibility = 'visible';
-    cameraImage.src = "data:image/jpeg;base64," + imageData;
-}
+    // Called when a photo is successfully retrieved
+    //
+    function onPhotoDataSuccess(imageData) {
+      // Uncomment to view the base64 encoded image data
+      // console.log(imageData);
 
-function onPhotoURISuccess(imageURI) {
-    console.log("* * * onPhotoURISuccess");
-    // Uncomment to view the image file URI 
-    // console.log(imageURI);
-    var cameraImage = document.getElementById('cameraImage');
-    cameraImage.style.visibility = 'visible';
-    cameraImage.src = imageURI;
-}
+      // Get image handle
+      //
+      var smallImage = document.getElementById('smallImage');
 
-function take_pic() {
-    navigator.camera.getPicture(onPhotoDataSuccess, function(ex) {
-        alert("Camera Error!");
-    }, { quality : 30, destinationType: destinationType.DATA_URL });
-}
+      // Unhide image elements
+      //
+      smallImage.style.display = 'block';
 
-function album_pic() { 
-    navigator.camera.getPicture(onPhotoURISuccess, function(ex) {
-            alert("Camera Error!"); }, 
-            { quality: 30, 
+      // Show the captured photo
+      // The inline CSS rules are used to resize the image
+      //
+      smallImage.src = "data:image/jpeg;base64," + imageData;
+    }
+
+    // Called when a photo is successfully retrieved
+    //
+    function onPhotoURISuccess(imageURI) {
+      // Uncomment to view the image file URI 
+      // console.log(imageURI);
+
+      // Get image handle
+      //
+      var largeImage = document.getElementById('largeImage');
+
+      // Unhide image elements
+      //
+      largeImage.style.display = 'block';
+
+      // Show the captured photo
+      // The inline CSS rules are used to resize the image
+      //
+      largeImage.src = imageURI;
+    }
+
+    // A button will call this function
+    //
+    function capturePhoto() {
+      // Take picture using device camera and retrieve image as base64-encoded string
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // A button will call this function
+    //
+    function capturePhotoEdit() {
+      // Take picture using device camera, allow edit, and retrieve image as base64-encoded string  
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 20, allowEdit: true,
+        destinationType: destinationType.DATA_URL });
+    }
+
+    // A button will call this function
+    //
+    function getPhoto(source) {
+      // Retrieve image file location from specified source
+      navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
         destinationType: destinationType.FILE_URI,
-        // Android Quirk: Camera.PictureSourceType.PHOTOLIBRARY and 
-        // Camera.PictureSourceType.SAVEDPHOTOALBUM display the same photo album.
-        sourceType: pictureSource.SAVEDPHOTOALBUM });
-}
+        sourceType: source });
+    }
+
+    // Called if something bad happens.
+    // 
+    function onFail(message) {
+      alert('Failed because: ' + message);
+    }

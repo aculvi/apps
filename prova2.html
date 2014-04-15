@@ -18,9 +18,14 @@
   	<div class="ui-grid-a" data-role="page">
 		<div class="ui-block-a"><div data-role="button" onclick="take_pic();">Take a Picture</div></div>
 		<div class="ui-block-b"><div data-role="button" onclick="album_pic();">Select</div></div>
+		<div class="ui-block-b"><div data-role="button" onclick="capturePhoto();">Capture Photo</div></div>
+	    <div class="ui-block-b"><div data-role="button" onclick="capturePhotoEdit();">Capture Editable Photo</div></div>
+	    <div class="ui-block-b"><div data-role="button" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</div></div>
+	    <div class="ui-block-b"><div data-role="button" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</div></div>
 	</div>
 	
-	<img id="cameraImage">
+	<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+    <img style="display:none;" id="largeImage" src="" />
 	
 	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
