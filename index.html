@@ -2,19 +2,19 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Clinicas Guang An Men</title>
+		
+		<title>Lo carrer</title>
         
         <meta name="format-detection" content="telephone=no" />
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <!-- width=device-width, height=device-height, -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
-        
-        <link rel="stylesheet" href="index.css" /> 
-        
-		<link rel="stylesheet" href="themes/clinicas.min.css" />
-		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+		<link rel="stylesheet" href="themes/clinicas.min.css" />
+		<link rel="stylesheet" href="index.css" />
 		
 	</head>
     
@@ -22,11 +22,11 @@
 		<div data-role="page" class="ui-responsive-panel">
 
 			<div data-role="header" data-theme="f">
-				<h1>Guang An Men</h1>
+				<h1>Lo carrer</h1>
 				<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
 			</div><!-- /header -->
 			<div data-role="content">
-				<h2>Bienvenido a las Clinicas Guang An Men</h2>
+				<h2>Welcome</h2>
 
 				<p>This is a typical page that has two buttons in the header bar that open panels. The left button opens a left menu with the reveal display mode. The right button opens a form in a right overlay panel.</p>
 				
@@ -38,38 +38,24 @@
 
 			<div class="jqm-footer">
 				<p class="jqm-version"></p>
-				<p>&copy; 2014 by HiTech Informatica</p>
+				<p>&copy; 2014 by Globals Design & Development</p>
 			</div><!-- /jqm-footer -->
 			
-			
-			<style>
-				.nav-search .ui-btn-up-a {
-					background-image:none;
-					background-color:#333333;
-				}
-				.nav-search .ui-btn-inner {
-					border-top: 1px solid #888;
-					border-color: rgba(255, 255, 255, .1);
-				}
-            </style>
+			<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
 
-				<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
+				<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+					<li data-filtertext="listview autodivider">
+						<a href="prova2.html">Contactar</a>
+					</li>
+				</ul>
 
-					<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
-						<li data-filtertext="listview autodivider">
-							<a href="prova2.html">Contactar</a>
-						</li>
-					</ul>
+			</div>
 
-					<!-- panel content goes here -->
-				</div><!-- /panel -->
-
-				
-		</div><!-- /page -->
+		</div>
 		
 		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-		
 		<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="index.js"></script>
 	</body>
 </html>
