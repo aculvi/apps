@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Lo carrer</title>
+        
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <!-- width=device-width, height=device-height, -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, target-densitydpi=device-dpi" />
+
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile.structure-1.4.2.min.css" />
+		<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+
+		<link rel="stylesheet" href="themes/clinicas.min.css" />
+		
+	</head>
+    
+	<body>
+		<div data-role="page" class="ui-responsive-panel">
+
+			<div data-role="header" data-theme="f">
+				<h1>Sensor</h1>
+				<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+			</div><!-- /header -->
+			<div data-role="content">
+				<p id="coords"></p>
+			</div><!-- /content -->
+
+			<div class="jqm-footer">
+				<p class="jqm-version"></p>
+				<p>&copy; 2014 by Globals Design & Development</p>
+			</div><!-- /jqm-footer -->
+			
+			<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
+
+				<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+					<li data-filtertext="listview autodivider">
+						<a href="index.html">Index</a>
+					</li>
+					<li data-filtertext="listview autodivider">
+						<a href="prova2.html">Contactar</a>
+					</li>
+				</ul>
+
+			</div>
+
+		</div>
+		
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+		<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
+		<script type="text/javascript" charset="utf-8" src="index.js"></script>
+		<script type="text/javascript" charset="utf-8" src="apis/index.js"></script>
+	</body>
+</html>
