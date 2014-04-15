@@ -58,6 +58,7 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
 
+<<<<<<< HEAD
 
     <gap:plugin name="org.apache.cordova.camera" version="0.2.4" />
 	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
@@ -75,6 +76,14 @@
 	<feature name="http://tizen.org/api/application" required="true"/>
 	<feature name="http://tizen.org/api/application.launch" required="true"/>
 
+=======
+	
+	<gap:plugin name="org.apache.cordova.camera" version="0.2.4" />
+	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
+	<gap:plugin name="org.apache.cordova.file" version="1.0.1" />
+	<gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
+	
+>>>>>>> 0cd1a6031a7bc61a79bdf8dc1ea34559f82cff38
 	<feature name="http://api.phonegap.com/1.0/camera"/>
 	<feature name="http://api.phonegap.com/1.0/file"/>
 	<feature name="http://api.phonegap.com/1.0/device" />
