@@ -10,7 +10,10 @@
     <description>APP</description>
     <author email="info@studioglobals.com" href="http://www.studioglobals.com">Globals Design and Development</author>
     <feature name="http://api.phonegap.com/3.3.0/device" />
-
+	
+	<access origin="*" />
+	<content src="index.html" />
+	
     <preference name="permissions" value="none" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="universal" />
@@ -27,7 +30,7 @@
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
 	
-    <access origin="*" />
+    
     
 	<icon src="img/logo.fw.png" />
 
