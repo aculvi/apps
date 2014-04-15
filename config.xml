@@ -8,7 +8,7 @@
 
     <name>Lo carre</name>
     <description>APP</description>
-    <author email="info@studioglobals.com" href="http://www.studioglobals.com">Globals D&amp;D</author>
+    <author email="info@studioglobals.com" href="http://www.studioglobals.com">Globals Design and Development</author>
     <feature name="http://api.phonegap.com/3.3.0/device" />
 
     <preference name="permissions" value="none" />
