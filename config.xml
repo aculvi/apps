@@ -67,11 +67,11 @@
 	<gap:plugin name="org.apache.cordova.camera" version="0.2.4"/>
 	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
 	<gap:plugin name="org.apache.cordova.file" version="1.0.1" />
+	<gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
 	<gap:plugin name="Accelerometer" value="org.apache.cordova.core.AccelListener" />
 	<gap:plugin name="Compass" value="org.apache.cordova.core.CompassListener" />
 	<gap:plugin name="Geolocation" value="org.apache.cordova.core.GeoBroker" />
 	<gap:plugin name="Media" value="org.apache.cordova.core.AudioHandler" />
-	<gap:plugin name="Capture" value="org.apache.cordova.core.Capture" />
 
 	
 	<feature name="Accelerometer">
