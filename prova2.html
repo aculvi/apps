@@ -15,20 +15,12 @@
 
 		<link rel="stylesheet" href="themes/clinicas.min.css" />
 		<link rel="stylesheet" href="index.css" />
-
 		<script>
-			function onBodyLoad() {
-			    document.addEventListener("deviceready",onDeviceReady,false);
-			}
-			     
-			function onDeviceReady() {
-			    navigator.notification.alert("PhoneGap is ready!");
-			}
+			app.initialize();
 		</script>
-
 	</head>
     
-	<body onload="onBodyLoad()">
+	<body>
 		<div data-role="page" class="ui-responsive-panel">
 
 			<div data-role="header" data-theme="f">
@@ -89,11 +81,20 @@
 
 		</div>
 		
-		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
-
+	<script type="text/javascript" charset="utf-8" src="./cordova-1.9.0.js"></script>
+	<script>
+		function onBodyLoad() {
+		    document.addEventListener("deviceready",onDeviceReady,false);
+		}
+			     
+		function onDeviceReady() {
+		    alert("PhoneGap is ready!");
+		}
+	</script>
 	<script type="text/javascript" charset="utf-8" src="index.js"></script>	
+
   	<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
 	<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
 	<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
