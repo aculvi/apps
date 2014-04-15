@@ -28,26 +28,26 @@
 			<div data-role="content">
 				<div class="ui-grid-a" data-role="page">
 					<div class="ui-block-a">
-						<button class="ui-btn ui-corner-all" onclick="take_pic();">Take a Picture</button>
+						<button class="ui-btn ui-corner-all" data-theme="a" onclick="take_pic();">Take a Picture</button>
 					</div>
 					<div class="ui-block-b">
-						<button class="ui-btn ui-corner-all" onclick="album_pic();">Select</button>
+						<button class="ui-btn ui-corner-all" data-theme="a" onclick="album_pic();">Select</button>
 					</div>
 				</div>
 				<div class="ui-grid-b" data-role="page">
 					<div class="ui-block-a">
-						<button class="ui-btn ui-corner-all" onclick="capturePhoto();">Capture Photo</button>
+						<button class="ui-btn ui-corner-all" data-theme="a" onclick="capturePhoto();">Capture Photo</button>
 					</div>
 				    <div class="ui-block-b">
-				    	<button class="ui-btn ui-corner-all" onclick="capturePhotoEdit();">Capture Editable Photo</button>
+				    	<button class="ui-btn ui-corner-all" data-theme="a" onclick="capturePhotoEdit();">Capture Editable Photo</button>
 				    </div>
 				</div>    
 				<div class="ui-grid-c" data-role="page">
 				    <div class="ui-block-a">
-				    	<button class="ui-btn ui-corner-all" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button>
+				    	<button class="ui-btn ui-corner-all" data-theme="a" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button>
 				    </div>
 				    <div class="ui-block-b">
-				    	<button class="ui-btn ui-corner-all" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button>
+				    	<button class="ui-btn ui-corner-all" data-theme="a" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button>
 				    </div>
 				</div>
 				
@@ -79,30 +79,7 @@
 
 		</div>
 		
-		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
-		<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
-		<script type="text/javascript" charset="utf-8" src="index.js"></script>
-	</body>
-</html>
-<!-- Copyright (c) 2012 Mobile Developer Solutions -->
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <meta http-equiv="Content-type" name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width">
-    <title>Take a picture</title>
-
-	<link rel="stylesheet" href="index.css" /> 
-  
-	<!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
-	
-	</head>
-  
-  <body>
-  	
-  	
-	<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>
 
@@ -110,5 +87,5 @@
   	<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
 	<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
 	<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
-  </body>
-  </html>
+	</body>
+</html>
