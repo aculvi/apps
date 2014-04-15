@@ -63,16 +63,13 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
 
-
-	<!--gap:plugin name="org.apache.cordova.camera" version="0.2.4" /-->
 	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
 	<gap:plugin name="org.apache.cordova.file" version="1.0.1" />
 	<gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
-	<gap:plugin name="org.apache.cordova.core.AccelListener" />
-	<gap:plugin name="org.apache.cordova.core.CompassListener" />
-	<gap:plugin name="org.apache.cordova.core.CameraLauncher" />
+	<gap:plugin name="org.apache.cordova.core.accelerometer" />
+	<gap:plugin name="org.apache.cordova.core.compass" />
+	<gap:plugin name="org.apache.cordova.core.camera" />
 
-	
 	<feature name="Accelerometer">
 	    <param name="android-package" value="org.apache.cordova.AccelListener" />
 	</feature>
