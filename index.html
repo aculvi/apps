@@ -15,10 +15,20 @@
 
 		<link rel="stylesheet" href="themes/clinicas.min.css" />
 		<link rel="stylesheet" href="index.css" />
-		
+
+		<script>
+			function onBodyLoad() {
+			    document.addEventListener("deviceready",onDeviceReady,false);
+			}
+			     
+			function onDeviceReady() {
+			    navigator.notification.alert("PhoneGap is ready!");
+			}
+		</script>
+
 	</head>
     
-	<body>
+	<body onload="onBodyLoad()">
 		<div data-role="page" class="ui-responsive-panel">
 
 			<div data-role="header" data-theme="f">
