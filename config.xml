@@ -58,12 +58,13 @@
     <gap:splash gap:platform="ios" height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
     <gap:splash gap:platform="winphone" src="res/screen/windows-phone/screen-portrait.jpg" />
 
-	<gap:plugin name="org.apache.cordova.camera" version="0.2.4" />
+
+    <gap:plugin name="org.apache.cordova.camera" version="0.2.4" />
 	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
 	<gap:plugin name="org.apache.cordova.file" version="1.0.1" />
 	<gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
-	
 	<feature id="blackberry.media.camera" />
+
 	<rim:permissions>
 	    <rim:permit>use_camera</rim:permit>
 	</rim:permissions>
@@ -73,8 +74,6 @@
 	</Capabilities>
 	<feature name="http://tizen.org/api/application" required="true"/>
 	<feature name="http://tizen.org/api/application.launch" required="true"/>
-
-
 
 	<feature name="http://api.phonegap.com/1.0/camera"/>
 	<feature name="http://api.phonegap.com/1.0/file"/>
