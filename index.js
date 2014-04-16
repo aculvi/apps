@@ -19,6 +19,7 @@
 $.mobile.phonegapNavigationEnabled=false;
 $(document).ready(function(){
     $('a').click(function(){
-        $.mobile.loadPage( $(this).attr('href'), { transition: "fade", changeHash: true });
+        if( $(this).attr('href').indexOf('#') != 0)
+            $.mobile.loadPage( $(this).attr('href'), { transition: "fade", changeHash: true });
     })
 });
