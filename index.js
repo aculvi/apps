@@ -60,4 +60,4 @@ $('#page-home').live('pageinit', function(event){
         $.mobile.silentScroll(0);
     });
 });
-$.mobile.phonegapNavigationEnabled=true;
+//$.mobile.phonegapNavigationEnabled=true;
