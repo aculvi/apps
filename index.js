@@ -19,6 +19,6 @@
 $.mobile.phonegapNavigationEnabled=false;
 $(document).ready(function(){
     $('a').click(function(){
-        $.mobile.changePage( $(this).attr('href'), { transition: "slideup", changeHash: false });
+        $.mobile.loadPage( $(this).attr('href'), { transition: "fade", changeHash: true });
     })
 });
