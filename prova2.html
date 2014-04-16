@@ -20,7 +20,7 @@
 	<body>
 		<div data-role="page" class="ui-responsive-panel">
 
-			<div data-role="header" data-theme="f">
+			<div data-role="header" data-theme="f" data-position-fixed="true">
 				<h1>Lo carrer</h1>
 				<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
 			</div><!-- /header -->
@@ -77,9 +77,14 @@
 			</div>
 
 		</div>
-		
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
   	<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
 	<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
 	<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/index.js"></script>
+		<script type="text/javascript">
+		$(document).load(function{app.initialitze()});
+		</script>
 	</body>
 </html>
