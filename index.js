@@ -17,9 +17,9 @@
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
 $.mobile.phonegapNavigationEnabled=false;
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('a').click(function(){
         if( $(this).attr('href').indexOf('#') != 0)
             $.mobile.loadPage( $(this).attr('href'), { transition: "fade", changeHash: true });
     })
-});
+});*/
