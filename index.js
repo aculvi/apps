@@ -16,13 +16,5 @@
  * FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, 
  * ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 */
-//$.mobile.phonegapNavigationEnabled=false;
 
-$(document).ready(function(){
-    $('a').click(function(){
-        if( $(this).attr('href').indexOf('#') != 0)
-            $.mobile.changePage( $(this).attr('href'), { transition: "fade", changeHash: true });
-    })
-});
-
-app.inisialitze();
+app.initialize();
