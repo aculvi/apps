@@ -1,64 +1,67 @@
-
+<div data-role="page" class="ui-responsive-panel">
+	<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
+		
+	<div data-role="header" data-theme="f" data-position-fixed="true">
+		<h1>Lo carrer</h1>
+		<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+	</div><!-- /header -->
 	
-		<div data-role="page" class="ui-responsive-panel">
-				<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
-				<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
-				<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
-			<div data-role="header" data-theme="f" data-position-fixed="true">
-				<h1>Lo carrer</h1>
-				<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
-			</div><!-- /header -->
-			<div data-role="content">
-				<div class="ui-grid-a" data-role="page">
-					<div class="ui-block-a">
-						<button class="ui-btn ui-corner-all" data-theme="f" onclick="take_pic();">Take a Picture</button>
-					</div>
-					<div class="ui-block-b">
-						<button class="ui-btn ui-corner-all" data-theme="f" onclick="album_pic();">Select</button>
-					</div>
-				</div>
-				<div class="ui-grid-a" data-role="page">
-					<div class="ui-block-a">
-						<button class="ui-btn ui-corner-all" data-theme="f" onclick="capturePhoto();">Capture Photo</button>
-					</div>
-				    <div class="ui-block-b">
-				    	<button class="ui-btn ui-corner-all" data-theme="f" onclick="capturePhotoEdit();">Capture Editable Photo</button>
-				    </div>
-				</div>    
-				<div class="ui-grid-a" data-role="page">
-				    <div class="ui-block-a">
-				    	<button class="ui-btn ui-corner-all" data-theme="f" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button>
-				    </div>
-				    <div class="ui-block-b">
-				    	<button class="ui-btn ui-corner-all" data-theme="f" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button>
-				    </div>
-				</div>
-				
-				<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
-			    <img style="display:none;" id="largeImage" src="" />
-				
-			</div><!-- /content -->
-
-			<div class="jqm-footer">
-				<p class="jqm-version"></p>
-				<p>&copy; 2014 by Globals Design &amp; Development</p>
-			</div><!-- /jqm-footer -->
-			
-			<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
-
-				<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
-					<li data-filtertext="listview autodivider">
-						<a href="index.html">Index</a>
-					</li>
-					<li data-filtertext="listview autodivider">
-						<a href="prova2.html">Contactar</a>
-					</li>
-					<li data-filtertext="listview autodivider">
-						<a href="sensor.html">Sensor</a>
-					</li>
-				</ul>
-
+	<div data-role="content">
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<button class="ui-btn ui-corner-all" data-theme="f" onclick="take_pic();">Take a Picture</button>
 			</div>
-
+			<div class="ui-block-b">
+				<button class="ui-btn ui-corner-all" data-theme="f" onclick="album_pic();">Select</button>
+			</div>
 		</div>
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<button class="ui-btn ui-corner-all" data-theme="f" onclick="capturePhoto();">Capture Photo</button>
+			</div>
+			<div class="ui-block-b">
+				<button class="ui-btn ui-corner-all" data-theme="f" onclick="capturePhotoEdit();">Capture Editable Photo</button>
+			</div>
+		</div>    
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<button class="ui-btn ui-corner-all" data-theme="f" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button>
+			</div>
+			<div class="ui-block-b">
+				<button class="ui-btn ui-corner-all" data-theme="f" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button>
+			</div>
+		</div>
+				
+		<img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+		
+		<img style="display:none;" id="largeImage" src="" />
+				
+	</div><!-- /content -->
+
+	<div class="jqm-footer">
+		<p class="jqm-version"></p>
+		
+		<p>&copy; 2014 by Globals Design &amp; Development</p>
+	
+	</div><!-- /jqm-footer -->
+			
+	<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="f">
+
+		<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+			<li data-filtertext="listview autodivider">
+				<a href="index.html">Index</a>
+			</li>
+			<li data-filtertext="listview autodivider">
+				<a href="prova2.html">Contactar</a>
+			</li>
+			<li data-filtertext="listview autodivider">
+				<a href="sensor.html">Sensor</a>
+			</li>
+		</ul>
+
+	</div>
+
+</div>
 	
