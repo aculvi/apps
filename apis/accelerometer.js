@@ -9,12 +9,13 @@
     //
     function onDeviceReady() {
         startWatch();
+        
     }
 
     // Start watching the acceleration
     //
     function startWatch() {
-
+        alert('start');
         // Update acceleration every 3 seconds
         var options = { frequency: 3000 };
 
