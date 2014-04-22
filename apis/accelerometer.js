@@ -1,21 +1,19 @@
-// The watch id references the current `watchAcceleration`
-    var watchID = null;
+var watchID = null;
 
-    // Wait for device API libraries to load
+    // Wait for Cordova to load
     //
-    //document.addEventListener("deviceready", onDeviceReady, false);
+    document.addEventListener("deviceready", onDeviceReady, false);
 
-    // device APIs are available
+    // Cordova is ready
     //
     function onDeviceReady() {
         startWatch();
-        
     }
 
     // Start watching the acceleration
     //
     function startWatch() {
-        alert('start');
+
         // Update acceleration every 3 seconds
         var options = { frequency: 3000 };
 
@@ -34,14 +32,10 @@
     // onSuccess: Get a snapshot of the current acceleration
     //
     function onSuccess(acceleration) {
-        
-        alert('succsess');
-        
-        var element = document.getElementById('coords');
-        
-        element. = 'Acceleration X: ' + acceleration.x         + '<br />' +
-                            'Acceleration Y: ' + acceleration.y         + '<br />' +
-                            'Acceleration Z: ' + acceleration.z         + '<br />' +
+        var element = document.getElementById('accelerometer');
+        element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
+                            'Acceleration Y: ' + acceleration.y + '<br />' +
+                            'Acceleration Z: ' + acceleration.z + '<br />' +
                             'Timestamp: '      + acceleration.timestamp + '<br />';
     }
 
