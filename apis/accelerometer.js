@@ -44,4 +44,5 @@
     // onError: Failed to get the acceleration
     //
     function onError() {
-     
+        alert('onError!');
+    }
