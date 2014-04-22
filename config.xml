@@ -67,5 +67,7 @@
 	<gap:plugin name="org.apache.cordova.file"/>
 	<gap:plugin name="org.apache.cordova.media-capture"/>
 	<gap:plugin name="org.apache.cordova.core.camera" />
+	<gap:plugin name="org.apache.cordova.file"/>
+	<gap:plugin name="org.apache.cordova.device-orientation"/>
 	
 </widget>

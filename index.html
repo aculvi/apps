@@ -36,12 +36,25 @@
 			<div data-role="content">
 				<h2>Welcome</h2>
 
-				<p>This is a typical page that has two buttons in the header bar that open panels. The left button opens a left menu with the reveal display mode. The right button opens a form in a right overlay panel.</p>
-				
-				<p>Since the panel links are in the top bar, there really isn't a need for the fixed positioning feature on the panel since you will always be scrolled to the top of the page. The fixed positioning impacts animation smoothness so it's off in this demo (<code>data-position-fixed="false"</code>) and the panel will scroll with the page.</p>
-				
-				<p>To make this responsive, the left panel stays open and causes the page to re-flow at wider widths. This allows both the menu and page to be used together when more space is available. This behavior is controlled by CSS media queries. You can create a custom one for a specific breakpoint or use the breakpoint preset by adding the <code> class="ui-responsive-panel"</code> to the page container.</p>
-
+				<div id="root" style="width: 400px; margin: 40px auto; padding: 10px; border-style: dashed; border-width: 1px;">
+				    embeded area
+				</div>
+				<script src="https://cdn.auth0.com/w2/auth0-widget-3.0.min.js"></script>
+				<script>
+					
+				  var widget = new Auth0Widget({
+				        domain:         'habana.auth0.com',
+				        clientID:       'zBjGhKckxJNcM2VWdOara3N6GoyHYva3',
+				        callbackURL:    'https://habana.auth0.com/mobile'
+				  });
+				  
+				  widget.signin({
+				      connections:    ['facebook', 'google-oauth2', 'twitter', 'Username-Password-Authentication'],
+				      icon:           'https://contoso.com/logo-32.png',
+				      showIcon:       true
+				      container: 'root', chrome: true, scope: 'openid profile' 
+				  },
+				</script>
 			</div><!-- /content -->
 
 			<div class="jqm-footer">
