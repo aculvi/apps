@@ -1,14 +1,12 @@
 <div data-role="page" class="ui-responsive-panel">
 
-	<script>app.initialize();</script>
-		
 	<script type="text/javascript" charset="utf-8">
 	
 		var watchID = null;
 	
 	    // Wait for Cordova to load
 	    //
-	    //document.addEventListener("deviceready", onDeviceReady, false);
+	    document.addEventListener("deviceready", onDeviceReady, false);
 	
 	    // Cordova is ready
 	    //
@@ -62,6 +60,7 @@
 			<div class="ui-block-a">
 				<button data-role="button" class="ui-btn ui-corner-all" data-theme="f" onclick="startWatch();">Start</button>
 			</div>
+			
 			<div class="ui-block-b">
 				<button  class="ui-btn ui-corner-all" data-theme="f" onclick="stopWatch();">Stop</button>
 			</div>
