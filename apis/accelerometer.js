@@ -34,8 +34,12 @@
     // onSuccess: Get a snapshot of the current acceleration
     //
     function onSuccess(acceleration) {
+        
+        alert('succsess');
+        
         var element = document.getElementById('coords');
-        element.innerHTML = 'Acceleration X: ' + acceleration.x         + '<br />' +
+        
+        element. = 'Acceleration X: ' + acceleration.x         + '<br />' +
                             'Acceleration Y: ' + acceleration.y         + '<br />' +
                             'Acceleration Z: ' + acceleration.z         + '<br />' +
                             'Timestamp: '      + acceleration.timestamp + '<br />';
