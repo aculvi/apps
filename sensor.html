@@ -1,6 +1,53 @@
 <div data-role="page" class="ui-responsive-panel">
 
-	<script type="text/javascript" charset="utf-8">
+	<div data-role="header" data-theme="f" data-position-fixed="true">
+		<h1>Lo carrer</h1>
+		<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
+	</div><!-- /header -->
+
+	<div data-role="content">
+		<div class="ui-grid-a">
+			<div class="ui-block-a">
+				<button data-role="button" class="ui-btn ui-corner-all" data-theme="f" onclick="startWatch();">Start</button>
+			</div>
+			
+			<div class="ui-block-b">
+				<button  class="ui-btn ui-corner-all" data-theme="f" onclick="stopWatch();">Stop</button>
+			</div>
+		</div>
+		
+		 <div id="accelerometer">Waiting for accelerometer...</div>
+
+	</div><!-- /content -->
+
+	<div class="jqm-footer">
+
+		<p class="jqm-version"></p>
+
+		<p>&copy; 2014 by Globals Design &amp; Development</p>
+
+	</div><!-- /jqm-footer -->
+
+	<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="f">
+
+		<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
+			<li data-filtertext="listview autodivider">
+				<a href="index.html">Index</a>
+			</li>
+			<li data-filtertext="listview autodivider">
+				<a href="prova2.html">Contactar</a>
+			</li>
+			<li data-filtertext="listview autodivider">
+				<a href="sensor.html">Sensor</a>
+			</li>
+		</ul>
+
+	</div>
+
+	<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
+	<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
+		<script type="text/javascript" charset="utf-8">
 	
 		var watchID = null;
 	
@@ -45,51 +92,10 @@
 	
 	    // onError: Failed to get the acceleration
 	    //
-	    function onError() {
+	  function onError() {
 	        alert('onError!');
 	    }
-	</script>	
-	
-	<div data-role="header" data-theme="f" data-position-fixed="true">
-		<h1>Sensor</h1>
-		<a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a>
-	</div><!-- /header -->
-	
-	<div data-role="content">
-		<div class="ui-grid-a">
-			<div class="ui-block-a">
-				<button data-role="button" class="ui-btn ui-corner-all" data-theme="f" onclick="startWatch();">Start</button>
-			</div>
-			
-			<div class="ui-block-b">
-				<button  class="ui-btn ui-corner-all" data-theme="f" onclick="stopWatch();">Stop</button>
-			</div>
-		</div>
+	</script>
 		
-		 <div id="accelerometer">Waiting for accelerometer...</div>
-
-				
-	</div><!-- /content -->
-
-	<div class="jqm-footer">
-		<p class="jqm-version"></p>
-		<p>&copy; 2014 by Globals Design &amp; Development</p>
-	</div><!-- /jqm-footer -->
-			
-	<div data-role="panel" data-position="left" data-position-fixed="false" data-display="reveal" id="nav-panel" data-theme="a">
-
-		<ul data-role="listview" data-theme="a" data-divider-theme="a" style="margin-top:-16px;" class="nav-search">
-			<li data-filtertext="listview autodivider">
-				<a href="index.html">Index</a>
-			</li>
-			<li data-filtertext="listview autodivider">
-				<a href="prova2.html">Contactar</a>
-			</li>
-			<li data-filtertext="listview autodivider">
-				<a href="sensor.html">Sensor</a>
-			</li>
-		</ul>
-
-	</div>
-	
 </div>
+	
