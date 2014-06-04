@@ -44,10 +44,7 @@
 
 	</div>
 
-	<script type="text/javascript" charset="utf-8" src="apis/camera.js"></script>
-	<script type="text/javascript" charset="utf-8" src="apis/capture.js"></script>
-	<script type="text/javascript" charset="utf-8" src="apis/file.js"></script>
-		<script type="text/javascript" charset="utf-8">
+	<script type="text/javascript" charset="utf-8">
 	
 		var watchID = null;
 	
@@ -84,10 +81,10 @@
 	    //
 	    function onSuccess(acceleration) {
 	        var element = document.getElementById('accelerometer');
-	        element.innerHTML = 'Acceleration X: ' + acceleration.x + '<br />' +
-	                            'Acceleration Y: ' + acceleration.y + '<br />' +
-	                            'Acceleration Z: ' + acceleration.z + '<br />' +
-	                            'Timestamp: '      + acceleration.timestamp + '<br />';
+	        element.innerHTML = 'Acceleration X: '	+ acceleration.x + '<br />' +
+								'Acceleration Y: '	+ acceleration.y + '<br />' +
+								'Acceleration Z: '	+ acceleration.z + '<br />' +
+								'Timestamp: '		+ acceleration.timestamp + '<br />';
 	    }
 	
 	    // onError: Failed to get the acceleration
